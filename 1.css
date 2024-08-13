@@ -1,0 +1,70 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #008CBA; /* Teal color */
+    float: left;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.hero {
+    display: flex; /* For aligning image and text */
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Stack text and image on smaller screens */
+    }
+    .image {
+        width: 100%; /* Image takes up full width on mobile */
+    }
+    nav ul {
+        float: none; /* Remove float for mobile menu */
+        text-align: center; /* Center the menu on smaller screens */
+    }
+}
